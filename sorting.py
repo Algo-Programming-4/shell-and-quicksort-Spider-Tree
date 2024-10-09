@@ -46,7 +46,7 @@ def insertion(unsorted):
     return unsorted
 #shell(list) -> sorted list
 def shell(unsorted):
-    gapValues=[len(unsorted)-1,(len(unsorted)//2)-1,1]
+    gapValues=[1]
     return Shell(unsorted,gapValues)
 def Shell(unsorted,gapValues):
     
