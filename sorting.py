@@ -68,7 +68,8 @@ def party(unsorted,low,high):
               high=high-1
     return high
 #quicksort(list) -> sorted list
-def quicksort(unsorted,low,high):
+
+def quicksort(unsorted,low=0,high=len(unsorted):
     if(low>=high):
         return 
     lowEnd=party(unsorted,low,high)
