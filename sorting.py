@@ -45,7 +45,10 @@ def insertion(unsorted):
             j=j-1
     return unsorted
 #shell(list) -> sorted list
-def shell(unsorted,gapValues=[unsorted=[len(unsorted)-1,1)]:
+def shell(unsorted):
+    gapValues=[len(unsorted)-1,(len(unsorted)//2)-1,1]
+    return Shell(unsorted,gapValues)
+def Shell(unsorted,gapValues]:
     
     for gap in gapValues:
         for x in range(gap):
@@ -68,8 +71,11 @@ def party(unsorted,low,high):
               high=high-1
     return high
 #quicksort(list) -> sorted list
-
-def quicksort(unsorted,low=0,high=len(unsorted)-1):
+def quicksort(numbers):
+    low=0
+    high=len(numbers)-1
+    return quickSort(numbers,low,high)
+def quickSort(unsorted,low,high):
     if(low>=high):
         return 
     lowEnd=party(unsorted,low,high)
