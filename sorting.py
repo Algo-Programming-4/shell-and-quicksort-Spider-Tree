@@ -48,7 +48,7 @@ def insertion(unsorted):
 def shell(unsorted):
     gapValues=[len(unsorted)-1,(len(unsorted)//2)-1,1]
     return Shell(unsorted,gapValues)
-def Shell(unsorted,gapValues]:
+def Shell(unsorted,gapValues):
     
     for gap in gapValues:
         for x in range(gap):
@@ -79,6 +79,6 @@ def quickSort(unsorted,low,high):
     if(low>=high):
         return 
     lowEnd=party(unsorted,low,high)
-    quicksort(unsorted,low,lowEnd)
-    quicksort(unsorted,lowEnd+1,high)
+    quickSort(unsorted,low,lowEnd)
+    quickSort(unsorted,lowEnd+1,high)
     return unsorted
